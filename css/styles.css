@@ -7,6 +7,9 @@
   width: 100%;
   display: block;
   margin: 0 auto;
+
+  object-fit: cover;
+  object-position: bottom;
 }
 .main {
   display: flex;
@@ -15,12 +18,6 @@
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
-}
-
-.img-header {
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
 }
 
 /*main*/
@@ -106,6 +103,8 @@ section .titulo-main {
   top: 5px;
 }
 
+/*section-ingredientes*/
+
 h3 {
   color: var(--Brandy-Red, #854632);
 
@@ -157,6 +156,7 @@ h3 {
   background-color: #e3ddd7;
 }
 
+/*section-instructions*/
 .lista-instructions {
   padding-top: 24px;
   display: flex;
@@ -201,6 +201,9 @@ h3 {
   width: 26px;
   font-weight: 700;
 }
+
+/*Nutrition*/
+
 .parrafo-nutrition {
   color: var(--Wenge-Brown, #5f564d);
 
