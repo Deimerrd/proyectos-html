@@ -6,8 +6,6 @@
 .img-header {
   width: 100%;
   display: block;
-  margin: 0 auto;
-
   object-fit: cover;
   object-position: bottom;
 }
@@ -273,18 +271,15 @@ tr {
   header {
     padding: 40px 40px;
   }
+  .img-header {
+    border-radius: 12px;
+  }
+
   .main {
-    max-width: 736px;
     padding: 40px;
     gap: 40px;
     border-radius: 24px;
     margin: auto;
-  }
-  .img-header {
-    width: 656px;
-    margin: 0 auto;
-    height: 300px;
-    border-radius: 12px;
   }
 
   .lista-time .pr::before {
