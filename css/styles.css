@@ -240,7 +240,7 @@ td {
   border: 0;
 }
 
-@media (min-width: 736px) {
+@media (min-width: 775px) {
   img {
     border-radius: 20px;
   }
