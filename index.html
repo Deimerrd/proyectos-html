@@ -6,10 +6,24 @@
     <title>Recipe page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
-      rel="stylesheet"
-    />
+
+
+
+
+
+    
+
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+
+
+   
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
       rel="stylesheet"
@@ -17,139 +31,157 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    
-    <header>
-        <img class="img-header" src="img/top-image.jpg" alt="header" />
-      </header>
-    <main>
-        
-      <div class="main">
+    <div class="contenido">
+      <img src="img/top-image.jpg" loading="lazy" />
+
+      <main class="texto-contenido">
         <section class="preparacion-main">
-          <h1 class="titulo-main">Simple Omelette Recipe</h1>
-          <p class="parrafo-main">
+          <h1>Simple Omelette Recipe</h1>
+          <p class="parrafo-preparacion">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
         </section>
 
-        <article class="article-main">
-          <h2 class="titulo-time">Preparation time</h2>
-          <ul class="lista-time">
-            <li class="list-time pr">
-              <span> <strong>Total:</strong> Approximately 10 minutes</span>
+        <div class="time">
+          <h2>Preparation time</h2>
+          <ul class="ul-time">
+            
+            <li class="list-time">
+              <ul class="ul-separador">
+                <li class="text-time">
+                  <strong class="strong">Total:</strong> Approximately 10 minutes
+                </li>
+              </ul>
             </li>
+            
 
             <li class="list-time">
-              <span><strong>Preparation:</strong> 5 minutes</span>
-            </li>
-
+              <ul class="ul-separador"><li class="text-time"><strong class="strong">Preparation:</strong> 5 minutes</li></li></ul>
             <li class="list-time">
-              <span><strong>Cooking:</strong> 5 minutes </span>
-            </li>
+              <ul class="ul-separador"><li class="text-time"></li><strong class="strong">Cooking:</strong> 5 minutes</li></ul>
           </ul>
-        </article>
+        </div>
 
         <section class="section-ingredientes">
-          <h3><span>Ingredients</span></h3>
+          <h3>Ingredients</h3>
           <ul class="lista-ingredientes">
-            <li class="list-ingrediente"><span>2-3 large eggs</span></li>
-            <li class="list-ingrediente"><span>Salt, to taste</span></li>
-            <li class="list-ingrediente"><span>Pepper, to taste</span></li>
             <li class="list-ingrediente">
-              <span>1 tablespoon of butter or oil</span>
+              <ul class="ul-separador"><li class="li-ingre">
+              2-3 large eggs
             </li>
-            <li class="list-ingrediente ul">
-              <span>
-                Optional fillings: cheese, diced vegetables, cooked meats,
-                herbs</span
-              >
+            </ul></li>
+
+            <li class="list-ingrediente">
+              <ul class="ul-separador"><li class="li-ingre">Salt, to taste</li></ul></li>
+            <li class="list-ingrediente">
+              <ul class="ul-separador"><li class="li-ingre">Pepper, to taste</li></ul>
+            </li>
+            <li class="list-ingrediente"><ul class="ul-separador"><li class="li-ingre">  1 tablespoon of butter or oil</li></ul></li>
+            <li class="list-ingrediente"><ul class="ul-separador"><li class="li-ingre">
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+            </ul>
             </li>
           </ul>
         </section>
 
-        <div class="linea"></div>
-
+        <hr />
         <section class="section-instructions">
           <h3>Instructions</h3>
-          <ol class="lista-instructions">
-            <li class="list-instructions">
-              <span
-                ><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
-                pinch of salt and pepper until they are well mixed. You can add
-                a tablespoon of water or milk for a fluffier texture.</span
-              >
+          <ol class="ol-instructions">
+            <li class="li-instructions">
+              <ol class="ul-separador">
+                <li class="li2">
+                  <strong class="strong"> Beat the eggs:</strong> In a bowl, beat
+                  the eggs with a pinch of salt and pepper until they are well
+                  mixed. You can add a tablespoon of water or milk for a
+                  fluffier texture.
+                </li>
+              </ol>
             </li>
-            <li class="list-instructions">
-              <span
-                ><strong>Heat the pan:</strong> Place a non-stick frying pan
-                over medium heat and add butter or oil.</span
-              >
+
+            <li class="li-instructions">
+              <ol class="ul-separador">
+                <li class="li2">
+                  <strong class="strong">Heat the pan:</strong> Place a non-stick
+                  frying pan over medium heat and add butter or oil.
+                </li>
+              </ol>
             </li>
-            <li class="list-instructions">
-              <span
-                ><strong>Cook the omelette:</strong> Once the butter is melted
-                and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
-                evenly coat the surface.</span
-              >
+
+            <li class="li-instructions">
+              <ol class="ul-separador">
+                <li class="li2">
+                  <strong class="strong">Cook the omelette:</strong> Once the
+                  butter is melted and bubbling, pour in the eggs. Tilt the pan
+                  to ensure the eggs evenly coat the surface.
+                </li>
+              </ol>
             </li>
-            <li class="list-instructions">
-              <span
-                ><strong>Add fillings (optional):</strong> When the eggs begin
-                to set at the edges but are still slightly runny in the middle,
-                sprinkle your chosen fillings over one half of the
-                omelette.</span
-              >
+            <li class="li-instructions">
+              <ol class="ul-separador">
+                <li class="li2">
+                  <strong class="strong">Add fillings (optional):</strong> When
+                  the eggs begin to set at the edges but are still slightly
+                  runny in the middle, sprinkle your chosen fillings over one
+                  half of the omelette.
+                </li>
+              </ol>
             </li>
-            <li class="list-instructions">
-              <span
-                ><strong>Fold and serve:</strong> As the omelette continues to
-                cook, carefully lift one edge and fold it over the fillings. Let
-                it cook for another minute, then slide it onto a plate.</span
-              >
+            <li class="li-instructions">
+              <ol class="ul-separador">
+                <li class="li2">
+                  <strong class="strong">Fold and serve:</strong>
+                  As the omelette continues to cook, carefully lift one edge and
+                  fold it over the fillings. Let it cook for another minute,
+                  then slide it onto a plate.
+                </li>
+              </ol>
             </li>
-            <li class="list-instructions">
-              <span
-                ><strong>Enjoy:</strong> Serve hot, with additional salt and
-                pepper if needed.</span
-              >
+            <li class="li-instructions">
+              <ol class="ul-separador">
+                <li class="li2">
+                  <strong class="strong">Enjoy:</strong>
+                  Serve hot, with additional salt and pepper if needed.
+                </li>
+              </ol>
             </li>
           </ol>
         </section>
-        <div class="linea"></div>
 
-        <footer class="section-nutrition">
+        <hr />
+
+        <section class="section-nutrition">
           <h3>Nutrition</h3>
           <p class="parrafo-nutrition">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <footer >
+
           <table>
             <tr>
               <th>Calories</th>
-              <td class="td-table">277kcal</td>
+              <td><strong class="bold">277kcal</strong></td>
             </tr>
-            <tr class="linear"></tr>
 
             <tr>
               <th>Carbs</th>
-              <td class="td-table">0g</td>
+              <td><strong class="bold">0g</strong></td>
             </tr>
-            <tr class="linear"></tr>
+            <tr>
+              <th>Proteina</th>
+              <td><strong class="bold">20g</strong></td>
+            </tr>
 
             <tr>
-              <th>Protein</th>
-              <td class="td-table">20g</td>
-            </tr>
-            <tr class="linear"></tr>
-            <tr>
-              <th>Fat</th>
-              <td class="td-table">22g</td>
+              <th class="th">Fat</th>
+              <td class="td"><strong class="bold">22g</strong></td>
             </tr>
           </table>
-        </footer>
-      </div>
-    </main>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
