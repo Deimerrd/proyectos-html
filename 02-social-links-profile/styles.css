@@ -102,6 +102,12 @@ body {
   background: var(--Grey);
 }
 
+.redes:hover {
+  border-radius: 8px;
+  background: var(--Neon-Green);
+  color: #141414;
+}
+
 @media (min-width: 1440px) {
   body {
     display: flex;
