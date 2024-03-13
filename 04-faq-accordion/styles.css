@@ -90,7 +90,7 @@ section {
 }
 
 .acordeon .interrogantes.active .paragraph-respuesta {
-  height: 150px;
+  height: 100px;
 }
 hr {
   height: 1px;
