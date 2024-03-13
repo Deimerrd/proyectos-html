@@ -44,7 +44,7 @@ section {
   flex-direction: column;
   gap: 24px;
   position: relative;
-  top: 4em;
+  top: 2em;
   border-radius: 8px;
   background: var(--White);
   box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.1);
