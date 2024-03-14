@@ -1,8 +1,8 @@
 :root {
-  --Light-Pink: #f8eeff;
   --Dark-Purple: #301534;
   --Pale-Purple: #8b6990;
   --White: #fff;
+  --Light-Pink: #f8eeff;
 }
 * {
   margin: 0;
@@ -44,7 +44,6 @@ section {
   flex-direction: column;
   gap: 24px;
   position: relative;
-  top: 2em;
   border-radius: 8px;
   background: var(--White);
   box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.1);
@@ -65,42 +64,28 @@ section {
   gap: 20px;
 }
 
-.acordeon .interrogantes .txt-pregunta {
+.acordeon details summary {
   width: 80%;
 }
 
-.acordeon .interrogantes .txt-pregunta::before {
+.acordeon details summary::before {
   content: url("images/icon-plus.svg");
   position: absolute;
   right: 24px;
 }
 
-.acordeon .interrogantes.active .txt-pregunta::before {
+.acordeon details.active summary::before {
   content: url("images/cerrar.svg");
   position: absolute;
   right: 24px;
 }
-
-.acordeon .interrogantes .paragraph-respuesta {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  overflow-y: auto;
-}
-
-.acordeon .interrogantes.active .paragraph-respuesta {
-  height: 100px;
-}
 hr {
   height: 1px;
   align-self: stretch;
-  position: relative;
-  bottom: 0.3em;
-  color: #f8eeff;
+  color: var(--Light-Pink);
 }
 
-.txt-pregunta {
+summary {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -108,14 +93,15 @@ hr {
   color: var(--Dark-Purple);
   font-size: 16px;
   font-weight: 600;
+  line-height: normal;
 }
 
-.txt-pregunta:hover {
-  color: var(--Pink);
+summary:hover {
+  color: var(--Pink, #ad28eb);
   cursor: pointer;
 }
 
-.interrogantes {
+details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -123,11 +109,12 @@ hr {
   align-self: stretch;
 }
 
-.paragraph-respuesta p {
+.paragraph-respuesta {
   color: var(--Pale-Purple);
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  margin-top: 24px;
 }
 
 @media (min-width: 400px) {
@@ -140,17 +127,12 @@ hr {
   .acordeon {
     gap: 24px;
   }
-  .acordeon .interrogantes .txt-pregunta {
+  .acordeon details summary {
     width: 450px;
   }
   section {
     padding: 40px;
     gap: 32px;
-    top: 3em;
-  }
-
-  .paragraph-respuesta p {
-    font-size: 16px;
   }
 
   body {
@@ -162,7 +144,7 @@ hr {
     font-size: 56px;
   }
 
-  .txt-pregunta {
+  summary {
     font-size: 18px;
   }
 
