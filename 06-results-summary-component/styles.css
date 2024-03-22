@@ -47,11 +47,14 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Hanken Grotesk";
+  font-family: 'Hanken Grotesk';
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 main {
-  margin: auto;
   width: 375px;
   height: 809px;
   flex-shrink: 0;
@@ -61,7 +64,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .result {
@@ -77,7 +80,7 @@ main {
 header {
   width: 140px;
   height: 140px;
-  background-image: url("./assets/images/circle.svg");
+  background-image: url('./assets/images/circle.svg');
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,13 +259,8 @@ button:hover {
   gap: 8px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 736px) {
   body {
-    display: flex;
-    width: 1440px;
-    height: 100vh;
-    padding: 284px 352px;
-    justify-content: center;
     align-items: center;
   }
 
@@ -272,7 +270,6 @@ button:hover {
   }
 
   main {
-    margin: 0;
     width: 375px;
     height: 809px;
     flex-shrink: 0;
@@ -304,7 +301,7 @@ button:hover {
   header {
     width: 200px;
     height: 200px;
-    background-image: url("./assets/images/circle2.svg");
+    background-image: url('./assets/images/circle2.svg');
   }
   .text-header {
     font-size: 18px;
