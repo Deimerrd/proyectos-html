@@ -47,7 +47,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Hanken Grotesk';
+  font-family: "Hanken Grotesk";
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -64,7 +64,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
 }
 
 .result {
@@ -80,7 +80,7 @@ main {
 header {
   width: 140px;
   height: 140px;
-  background-image: url('./assets/images/circle.svg');
+  background-image: url("./assets/images/circle.svg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,15 +301,16 @@ button:hover {
   header {
     width: 200px;
     height: 200px;
-    background-image: url('./assets/images/circle2.svg');
+    background-image: url("./assets/images/circle2.svg");
   }
   .text-header {
     font-size: 18px;
   }
 
   h1 {
-    font-size: 72px;
+    font-size: 32px;
     line-height: 72px;
+    width: 236px;
   }
 
   h2 {
@@ -348,5 +349,11 @@ button:hover {
   button {
     width: 288px;
     height: 56px;
+
+    font-size: 14px;
+  }
+
+  .texto-paragraph {
+    font-size: 14px;
   }
 }

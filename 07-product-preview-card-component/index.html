@@ -10,22 +10,64 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,800;1,800&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Product preview card component</title>
   </head>
   <body>
-    <div>Perfume</div>
+    <section class="card">
+      <figure>
+        <img
+          class="img-producto"
+          style="float: left"
+          src="images/image-product-mobile.jpg"
+          alt="producto"
+        />
 
-    <div>Gabrielle Essence Eau De Parfum</div>
+        <img
+          class="img-produc"
+          src="images/image-product-desktop.jpg"
+          alt="producto"
+        />
+      </figure>
+      <div class="card-text">
+        <p class="paragraph">PERFUME</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p class="texto-paragraph">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
 
-    <div>
-      A floral, solar and voluptuous interpretation composed by Olivier Polge,
-      Perfumer-Creator for the House of CHANEL.
-    </div>
+        <article class="card-plan">
+          <div class="card-info">
+            <p class="card-price">$149.99</p>
+            <del class="card-orig">$169.99</del>
+          </div>
+        </article>
 
-    <div>$149.99 - $169.99</div>
-
-    <div>Add to Cart</div>
+        <a href="#" class="card-cta"
+          ><img class="img" src="images/icon-cart.svg" alt="card" />
+          <p class="text-add">Add to Cart</p>
+        </a>
+      </div>
+    </section>
   </body>
 </html>
