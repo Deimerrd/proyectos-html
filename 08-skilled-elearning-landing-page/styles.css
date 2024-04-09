@@ -433,4 +433,12 @@ footer {
   .main {
     margin-bottom: 99px;
   }
+
+  .main-article {
+    height: 322px;
+  }
+  .paragraph-main {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
