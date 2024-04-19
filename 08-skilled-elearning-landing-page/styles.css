@@ -34,7 +34,6 @@ body {
   font-family: "Plus Jakarta Sans";
   background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
   overflow-x: hidden;
-  min-height: auto;
 }
 
 button {
@@ -42,25 +41,25 @@ button {
 }
 
 .container {
-  width: 87%;
   max-width: 1200px;
   margin: auto;
   padding: var(--padding-container);
 }
 
+footer {
+  width: 100%;
+  align-items: self-end;
+}
 /*nav*/
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 110px;
+  padding-bottom: 160px;
+  margin-top: 31px;
   .logo-dark-f {
     width: 89px;
     height: 35px;
-
-    .logo-dark {
-      width: 100%;
-    }
   }
 
   .button-nav {
@@ -91,6 +90,11 @@ button {
 
 /*hero*/
 
+.hero {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .hero-main {
   position: relative;
   top: -100px;
@@ -106,7 +110,6 @@ button {
   font-size: 40px;
   font-weight: 800;
 }
-
 .hero-paragraph {
   color: var(--83869A);
   font-size: 16px;
@@ -151,9 +154,9 @@ button {
   position: relative;
   bottom: 150px;
   display: flex;
-  gap: 48px;
+  gap: 16px;
   flex-direction: column;
-  right: 0.5em;
+  left: 16px;
 }
 
 .main-article {
@@ -166,6 +169,7 @@ button {
     linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
   );
   position: relative;
+  margin-bottom: 22px;
 }
 
 .paragraph-main {
@@ -225,7 +229,6 @@ h2 {
   color: var(--83869A);
   margin-bottom: 24px;
   font-size: 16px;
-
   font-weight: 400;
   line-height: 26px;
 }
@@ -243,17 +246,14 @@ h2 {
 }
 
 footer {
-  display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   background: var(--13183F, #13183f);
 }
 .footer {
   display: flex;
-  width: 87%;
   justify-content: center;
   align-items: center;
+  padding: 36px 16px;
 }
 
 .logo-light-l {
@@ -288,9 +288,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav {
-    width: 89%;
-    margin: auto;
+    padding-left: 40px;
+    padding-right: 39px;
   }
   .button-nav {
     position: relative;
@@ -300,15 +303,19 @@ footer {
     position: relative;
     left: 0%;
   }
+  .logo-dark-f {
+    position: relative;
+    right: 4px;
+  }
   .logo-light {
     width: 89px;
-  }
-  .main {
-    width: 89%;
   }
 
   .hero-main {
     position: relative;
+  }
+  .hero-info {
+    padding-left: 39px;
   }
 
   .hero-img-tablet {
@@ -318,6 +325,9 @@ footer {
     width: 100%;
     max-width: 710px;
     left: 50%;
+  }
+  .texto-article {
+    width: 286px;
   }
   .hero-info {
     display: flex;
@@ -340,14 +350,12 @@ footer {
     display: none;
   }
   .main {
-    max-width: 100vh;
-    width: 87%;
-    max-width: 1200px;
-    margin: 0 auto;
     display: grid;
-    gap: 36px;
-    margin-top: 170px;
-    grid-auto-rows: 300px;
+    gap: 11px;
+    margin-top: 250px;
+    padding-left: 15px;
+    padding-right: 39px;
+    grid-template-rows: 300px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 
@@ -355,7 +363,6 @@ footer {
     width: 339px;
     height: 259px;
     position: relative;
-    left: 0em;
   }
   .main-article2 {
     width: 340px;
@@ -380,18 +387,48 @@ footer {
   .button-footer {
     font-size: 18px;
   }
+  .footer {
+    padding: 36px 39px;
+  }
+  .logo-light-l {
+    position: relative;
+    right: 3px;
+  }
 }
 @media (min-width: 1200px) {
   body {
-    height: auto;
+    overflow-x: hidden;
   }
-  .nav {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .main {
+    gap: 30px;
+    grid-template-rows: 330px;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  }
+  footer {
     margin: auto;
   }
+
+  .nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo-dark {
+    position: relative;
+    right: 0.3px;
+  }
   .button-nav {
-    z-index: 1;
     width: 167px;
     height: 56px;
+    position: relative;
+    left: 29px;
   }
 
   .button-hero:hover {
@@ -402,7 +439,7 @@ footer {
   .deskotp {
     display: block;
     margin-left: 55%;
-    margin-top: -55%;
+    margin-top: -65%;
   }
   .hero-info {
     max-width: 457px;
@@ -418,20 +455,23 @@ footer {
     position: relative;
   }
 
-  .main {
-    gap: 80px;
+  .hero-info {
+    padding-left: 0;
     position: relative;
-    bottom: 80px;
+    right: 37px;
   }
 
   .texto-article {
     width: 286px;
     height: 218px;
-    flex-shrink: 0;
   }
   .paragraph-nav {
     font-size: 36px;
     width: 430px;
+  }
+  .logo-dark {
+    position: relative;
+    right: 48px;
   }
   .hero-img-tablet {
     display: none;
@@ -458,6 +498,9 @@ footer {
   }
   .main {
     margin-top: 9px;
+    position: relative;
+    right: 24px;
+    left: 0;
   }
 
   .main-article {
@@ -472,5 +515,13 @@ footer {
     width: 350px;
     height: 322px;
     flex-shrink: 0;
+  }
+
+  .logo-light {
+    position: relative;
+    left: 12px;
+  }
+  .button-footer {
+    margin-right: 12px;
   }
 }
