@@ -5,12 +5,12 @@ const btnthank = document.getElementById("btn-rating");
 const rating = document.getElementById("rating");
 const rates = document.querySelectorAll(".btn");
 submitbtn.addEventListener("click", () => {
-  Thankyou.classList.remove("hidden");
+  Thankyou.classList.remove("windows");
   start.style.display = "none";
 });
 
 btnthank.addEventListener("click", () => {
-  Thankyou.classList.add("hidden");
+  Thankyou.classList.add("windows");
   start.style.display = "block";
 });
 
