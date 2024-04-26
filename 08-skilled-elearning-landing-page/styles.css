@@ -33,11 +33,11 @@
 body {
   font-family: "Plus Jakarta Sans";
   background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
-  overflow-x: hidden;
 }
 
-button {
-  border: 0;
+.contenedor {
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -60,6 +60,10 @@ footer {
   .logo-dark-f {
     width: 89px;
     height: 35px;
+  }
+
+  button {
+    border: 0;
   }
 
   .button-nav {
