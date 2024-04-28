@@ -94,6 +94,7 @@ h1 {
   font-weight: 800;
   line-height: 72px;
   align-self: center;
+  text-align: center;
 }
 .your-result {
   color: var(--Light-Blue);
