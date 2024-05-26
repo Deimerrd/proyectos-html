@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  padding: 177px 165px;
+  justify-content: center;
+  align-items: center;
+  background: #0a0c1c;
+  min-height: 100vh;
+}
+main {
+  width: 1110px;
+  height: 446px;
+  border-radius: 8px;
+  background: #1b1937;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+  display: flex;
+  flex-direction: row;
+  border: none;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.fase1 {
+  padding-left: 72px;
+  padding-top: 71px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.fase1 h1 {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  width: 403px;
+}
+.fase1 h1 strong {
+  color: #ab5cdb;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.paragraph-fase1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.75;
+  width: 374px;
+}
+
+h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+em {
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  margin-top: 2.5em;
+}
+
+.img-desktop {
+  object-fit: cover;
+}
+
+.desktop {
+  position: relative;
+}
+.desktop::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ab5cdb;
+  opacity: 0.5;
+}
+
+.mobil {
+  display: none;
+}
+@media (max-width: 768px) {
+  .container {
+    height: 956px;
+    padding: 88px 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+  .mobil {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main {
+    flex-direction: column-reverse;
+    width: 327px;
+    height: 780px;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: #1b1937;
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+    overflow: hidden;
+  }
+
+  .fase1 {
+    padding: 0 31px;
+    gap: 16px;
+    margin-top: 2em;
+  }
+  .fase1 h1 {
+    width: 264px;
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .fase1 h1 strong {
+    font-size: 28px;
+  }
+
+  .paragraph-fase1 {
+    width: 264px;
+    text-align: center;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+    justify-content: center;
+    transform: translateY(-2em);
+    text-align: center;
+  }
+}
