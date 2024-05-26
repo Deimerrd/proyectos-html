@@ -26,6 +26,7 @@ main {
   flex-direction: row;
   border: none;
   overflow: hidden;
+  justify-content: space-between;
 }
 .fase1 {
   padding-left: 72px;
@@ -89,34 +90,45 @@ article {
   gap: 64px;
   margin-top: 2.5em;
 }
-.fase2 {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("images/image-header-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-left: 7%;
-}
-.card-img {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
 
+.img-desktop {
+  object-fit: cover;
+}
+
+.desktop {
   position: relative;
-  background: hsl(277, 64%, 61%);
-  opacity: 0.7511;
-  opacity: 100;
-  mix-blend-mode: multiply;
+}
+.desktop::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ab5cdb;
+  opacity: 0.5;
 }
 
-@media (max-width: 1024px) {
+.mobil {
+  display: none;
+}
+@media (max-width: 768px) {
   .container {
     height: 956px;
     padding: 88px 24px;
     flex-direction: column;
+    text-align: center;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+  .mobil {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   main {
     flex-direction: column-reverse;
@@ -130,15 +142,13 @@ article {
   }
 
   .fase1 {
-    padding-left: 31px;
-    padding-top: 10px;
+    padding: 0 31px;
     gap: 16px;
     margin-top: 2em;
   }
   .fase1 h1 {
     width: 264px;
     color: #fff;
-    text-align: center;
     font-size: 28px;
     line-height: 32px;
   }
@@ -159,24 +169,5 @@ article {
     justify-content: center;
     transform: translateY(-2em);
     text-align: center;
-  }
-  .fase2 {
-    background-image: url("images/image-header-mobile.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-left: 0%;
-    background-position: top;
-  }
-
-  .card-img {
-    width: 100%;
-    height: 96.8%;
-    z-index: 2;
-
-    position: relative;
-    background: hsl(277, 64%, 61%);
-    opacity: 0.7511;
-    opacity: 100;
-    mix-blend-mode: multiply;
   }
 }
