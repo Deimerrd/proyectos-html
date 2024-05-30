@@ -10,35 +10,122 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Meet landing page</title>
   </head>
   <body>
-    <div>
-      Meet makes it easy to connect with others face-to-face virtually and
-      collaborate across any device.
+    <div class="contenedor">
+      <nav>
+        <img src="assets/logo.svg" alt="" />
+      </nav>
+
+      <header class="hero">
+        <img
+          class="hero-left"
+          src="assets/desktop/image-hero-left.png"
+          alt="hero-left"
+        />
+
+        <section class="hero-text">
+          <h1>Group Chat for Everyone</h1>
+          <p class="hero-paragraph">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+
+          <div class="buttons">
+            <button class="btn-Download btn">
+              <a href="#">Download <em>v1.3</em></a>
+            </button>
+
+            <button class="btn-what btn">
+              <a href="#">What is it?</a>
+            </button>
+          </div>
+        </section>
+
+        <img
+          class="hero-right"
+          src="assets/desktop/image-hero-right.png"
+          alt="hero-right"
+        />
+      </header>
+
+      <article>
+        <img src="assets/mobile/linea.svg" alt="" />
+        <div class="circle">01</div>
+      </article>
     </div>
 
-    <div>Download v1.3</div>
+    <section class="gallery">
+      <img
+        src="assets/desktop/image-woman-in-videocall.jpg"
+        class="img__galery"
+      />
+      <img
+        src="assets/desktop/image-women-videochatting.jpg"
+        class="img__galery"
+      />
+      <img src="assets/desktop/image-men-in-meeting.jpg" class="img__galery" />
+      <img src="assets/desktop/image-man-texting.jpg" class="img__galery" />
+    </section>
 
-    <div>What is it?</div>
+    <article class="smarter">
+      <p class="smarter-built">Built for modern use</p>
+      <h2>Smarter meetings, all in one place</h2>
+      <p class="texto-smarter">
+        Send messages, share files, show your screen, and record your meetings —
+        all in one workspace. Control who can join with invite-only team access,
+        data encryption, and data export.
+      </p>
+    </article>
 
-    <div>01 Built for modern use</div>
+    <article class="articulo">
+      <img src="assets/mobile/linea.svg" alt="" />
+      <div class="circle">02</div>
+    </article>
 
-    <div>Smarter meetings, all in one place</div>
+    <footer>
+      <section class="texto-footer">
+        <h3>Experience more together</h3>
+        <p class="paragraph-footer">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
 
-    <div>
-      Send messages, share files, show your screen, and record your meetings —
-      all in one workspace. Control who can join with invite-only team access,
-      data encryption, and data export.
-    </div>
+        <button class="btn-what btn bt-footer">
+          <a href="#">Download <em>v1.3</em></a>
+        </button>
+      </section>
+      <img
+        class="img-footer"
+        src="assets/desktop/image-footer.jpg"
+        alt="desktop"
+      />
+      <img
+        class="img-mobil-footer"
+        src="assets/mobile/image-footer.jpg"
+        alt="mobile"
+      />
 
-    <div>
-      02 Experience more together Stay connected with reliable HD meetings and
-      unlimited one-on-one and group video sessions.
-    </div>
-
-    <div>Download v1.3</div>
+      <img
+        class="img-tablet-footer"
+        src="assets/tablet/image-footer.jpg"
+        alt="tablet"
+      />
+    </footer>
   </body>
 </html>
