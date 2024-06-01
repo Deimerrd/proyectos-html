@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f2f2;
+  margin: auto;
+  display: flex;
+  width: 375px;
+  height: 1502px;
+  padding: 88px 24px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.img {
+  padding-bottom: 35px;
+}
+h2 {
+  padding-bottom: 25px;
+}
+.paragraph {
+  padding-bottom: 25px;
+}
+
+main {
+  width: 327px;
+  height: 1326px;
+  flex-shrink: 0;
+}
+.section {
+  width: 327px;
+  height: 442px;
+  background: #e28625;
+  padding: 48px 47.5px 48px 48.5px;
+}
+
+h2 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.paragraph {
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.sedans {
+  background: #e28625;
+  transform: translateY(0.7em);
+  overflow: hidden;
+
+  border-radius: 8px 8px 0 0;
+}
+.suvs {
+  background: #006971;
+}
+.luxury {
+  background: #004140;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.btn {
+  width: 146px;
+  height: 48px;
+  border-radius: 25px;
+  background: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.buttons-sedans a {
+  color: #e28625;
+  cursor: pointer;
+}
+
+.buttons-sedans:hover {
+  background: #e28625;
+
+  border: 2px solid #fff;
+  a {
+    color: #fff;
+  }
+}
+.buttons-suvs a {
+  color: #006971;
+}
+
+.buttons-suvs:hover {
+  background: #006971;
+
+  border: 2px solid #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.buttons-luxury a {
+  color: #004140;
+}
+
+.buttons-luxury:hover {
+  background: #004140;
+
+  border: 2px solid #fff;
+  a {
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    height: 800px;
+    background: #f2f2f2;
+  }
+  main {
+    width: 920px;
+    height: 500px;
+    display: flex;
+  }
+
+  .section {
+    padding: 48px 47.5px 45px 47.5px;
+    min-height: 500px;
+  }
+  .img {
+    padding-bottom: 35px;
+  }
+  h2 {
+    padding-bottom: 25px;
+  }
+  .paragraph {
+    padding-bottom: 83px;
+  }
+  .sedans {
+    min-width: 307px;
+    transform: translateX(0.5em);
+
+    border-radius: 8px 0px 0px 8px;
+  }
+  .suvs {
+    max-width: 307px;
+  }
+  .luxury {
+    max-width: 307px;
+    border-radius: 0px 8px 8px 0px;
+  }
+}
