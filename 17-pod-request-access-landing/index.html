@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <main>
+        <header>
+          <img class="logo" src="assets/logo.svg" alt="logo" />
+        </header>
+        <section>
+          <h1>Publish your podcasts <em>everywhere.</em></h1>
+          <p>
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+
+          <footer>
+            <article>
+              <img class="img" src="assets/spotify.svg" alt="spotify" />
+
+              <img class="img" src="assets/apple-podcast.svg" alt="podcast" />
+
+              <img
+                class="img"
+                src="assets/google-podcasts.svg"
+                alt="google-podcasts"
+              />
+
+              <img
+                class="img"
+                src="assets/pocket-casts.svg"
+                alt="pocket-casts"
+              />
+            </article>
+
+            <form novalidate>
+              <label>
+                <input
+                  class="email"
+                  id="submitmail"
+                  type="email"
+                  placeholder="Email address"
+                  required
+                />
+                <input
+                  type="submit"
+                  class="btn"
+                  id="btn"
+                  value="Request access"
+                />
+              </label>
+              <span class="errort">Oops! Please check your email</span>
+            </form>
+          </footer>
+        </section>
+      </main>
+
+      <div class="batter">
+        <img class="img-batter" src="assets/bg-pattern-dots.svg" alt="batter" />
+      </div>
+    </div>
+
+    <script src="./scrit.js"></script>
+  </body>
+</html>
