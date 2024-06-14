@@ -16,9 +16,8 @@ main {
 }
 
 .contenedor {
-  /* min-height: 100vh;
-  overflow-x: hidden;
-  position: relative;*/
+  min-height: 800px;
+  position: relative;
   margin: auto;
 }
 .pattern-top-desktop {
@@ -239,7 +238,7 @@ samp {
     position: relative;
     left: 100px;
     transform: rotate(18deg);
-    bottom: 10em;
+    bottom: 13em;
   }
 
   .bg-pattern-bottom-desktop {
@@ -247,8 +246,5 @@ samp {
     position: relative;
     left: -2%;
     top: 6em;
-  }
-  body {
-    overflow-x: hidden;
   }
 }
