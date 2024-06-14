@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan";
+}
+main {
+  padding-left: 24px;
+  padding-right: 24px;
+  position: absolute;
+  top: 82px;
+  padding-bottom: 99px;
+}
+
+.contenedor {
+  /* min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;*/
+  margin: auto;
+}
+.pattern-top-desktop {
+  display: none;
+}
+
+.pattern-top-mobil {
+  position: absolute;
+  object-fit: cover;
+}
+.bg-pattern-bottom-mobile {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.bg-pattern-bottom-desktop {
+  display: none;
+}
+.titulo {
+  text-align: center;
+  font-style: normal;
+}
+
+.titulo h1 {
+  font-size: 40px;
+  color: #512051;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1.429px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.titulo p {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.633px;
+  color: #927b91;
+  padding-bottom: 39px;
+  font-style: normal;
+
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.ol {
+  padding-bottom: 49px;
+}
+.ol ol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ol ol li {
+  width: 327px;
+  height: 78px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f7f2f7;
+  list-style-type: none;
+  padding: 16px 0;
+}
+.ol ol li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15.23px;
+  text-align: center;
+  align-items: center;
+  color: #512051;
+  font-size: 17px;
+  font-weight: 700;
+}
+.articulos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+article {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background: #512051;
+  width: 327px;
+  height: 258px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  font-size: 17px;
+  font-style: normal;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+figure {
+  display: flex;
+  gap: 24px;
+}
+figcaption {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 700;
+}
+figcaption em {
+  color: #ee69a4;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "League Spartan";
+}
+
+samp {
+  color: #fff;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.304px;
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor {
+    min-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    top: 118px;
+  }
+  .titulo {
+    width: 445px;
+    height: 154px;
+    flex-shrink: 0;
+    text-align: left;
+  }
+
+  .titulo h1 {
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    padding-left: 0;
+  }
+  .pattern-top-mobil {
+    display: none;
+  }
+  .pattern-top-desktop {
+    display: block;
+  }
+  .bg-pattern-bottom-mobile {
+    display: none;
+  }
+  header {
+    display: flex;
+    gap: 125px;
+    padding-bottom: 71px;
+  }
+
+  .ol ol li {
+    width: 445px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+
+  .ol ol li a {
+    flex-direction: row;
+    gap: 32.45px;
+    padding-left: 32px;
+  }
+  .ol ol li {
+    padding-left: 0px;
+  }
+  .articulos {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  article {
+    width: 350px;
+    flex-shrink: 0;
+  }
+  figure {
+    padding-bottom: 31px;
+    padding-top: 40px;
+  }
+  samp {
+    padding-bottom: 35px;
+  }
+  .listab {
+    margin-left: 48px;
+  }
+  .listac {
+    margin-left: 95px;
+  }
+  .ol {
+    margin-top: 1.5em;
+  }
+  .card-b {
+    margin-top: 16px;
+  }
+  .card-c {
+    margin-top: 34px;
+  }
+
+  .pattern-top-desktop {
+    position: relative;
+    left: 100px;
+    transform: rotate(18deg);
+    bottom: 10em;
+  }
+
+  .bg-pattern-bottom-desktop {
+    display: block;
+    position: relative;
+    left: -2%;
+    top: 6em;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
