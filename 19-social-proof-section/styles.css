@@ -6,6 +6,8 @@
 
 body {
   font-family: "League Spartan";
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 main {
   padding-left: 24px;
@@ -25,7 +27,7 @@ main {
 
 .pattern-top-mobil {
   position: absolute;
-  object-fit: cover;
+  bottom: 65%;
 }
 .bg-pattern-bottom-mobile {
   position: absolute;
