@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  min-height: 100vh;
+  display: flex;
+  background: #ecf2f8;
+}
+
+main {
+  width: 327px;
+  margin: auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  height: 512px;
+}
+.content {
+  background-color: #fff;
+  transform: translateY(-3em);
+}
+.charet {
+  display: none;
+}
+
+header {
+  width: 327px;
+  flex-shrink: 0;
+}
+header img {
+  width: 100%;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+}
+section {
+  padding: 32px 12px 32px 32px;
+  font-style: normal;
+}
+h4 {
+  color: #48556a;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  width: 263px;
+}
+section .paragraph {
+  padding-top: 12px;
+  color: #6e8098;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.122px;
+  width: 263px;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 40px;
+}
+figure {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 24px;
+}
+figcaption {
+  display: flex;
+  gap: 16px;
+}
+.content {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: #48556a;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.122px;
+}
+.text samp {
+  color: #9daec2;
+  font-weight: 500;
+}
+figure {
+  display: flex;
+  padding-bottom: 1.4em;
+}
+
+footer:hover {
+  figure {
+    display: none;
+  }
+  .footer {
+    display: flex;
+  }
+}
+.footer {
+  width: 327px;
+  height: 64px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #48556a;
+  margin-top: 0.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+ul {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+  right: 1em;
+}
+ul li {
+  list-style-type: none;
+}
+h3 {
+  color: #9daec2;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 5px;
+  position: relative;
+  left: 1em;
+}
+.share {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.redes {
+  display: none;
+}
+
+.btn-none {
+  border: none;
+  background-color: #fff;
+}
+@media (min-width: 730px) {
+  .content {
+    background-color: #fff;
+    transform: translateY(0);
+    transform: translateX(-4.1em);
+    height: 280px;
+    padding: 0;
+    border-radius: 0px;
+  }
+
+  .btn-none {
+    background-color: white;
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+
+  main {
+    width: 730px;
+    height: 280px;
+    flex-direction: row;
+  }
+  header {
+    width: 350px;
+  }
+  header img {
+    border-radius: 10px;
+  }
+
+  .redes-sociales {
+    position: absolute;
+    left: 16.5em;
+    top: 7.3em;
+    display: none;
+  }
+  section {
+    padding-right: 0;
+    padding-left: 3em;
+  }
+  section .paragraph {
+    width: 365px;
+  }
+  footer {
+    padding-left: 1em;
+  }
+  .footer {
+    width: 248px;
+    fill: #48556a;
+    filter: drop-shadow(0px 10px 10px rgba(201, 213, 225, 0.5));
+  }
+  figure {
+    padding-right: 0;
+  }
+
+  footer:hover {
+    figure {
+      display: flex;
+    }
+    .footer {
+      display: none;
+    }
+  }
+
+  .share {
+    display: none;
+  }
+  h4 {
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    width: 365px;
+
+    color: #48556a;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+  }
+  .redes {
+    background-image: url("./images/redes.svg");
+    width: 100%;
+    height: 67px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 5.2em;
+    left: 16.5em;
+
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  footer:hover {
+    .redes {
+      display: flex;
+      animation-duration: 12ms;
+    }
+    circle {
+      fill: #6e8098;
+    }
+    #pat-text {
+      fill: white;
+    }
+  }
+
+  footer:focus {
+    .redes {
+      display: block;
+    }
+  }
+  h3 {
+    left: -70px;
+    top: -5px;
+  }
+  .lista-desktop {
+    margin-bottom: 5px;
+    list-style-type: none;
+    transform: translateX(-3.4em);
+    right: 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+}
