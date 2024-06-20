@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Article preview component</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="images/drawers.jpg" alt="" />
+      </header>
+      <div class="content">
+        <section>
+          <h4>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h4>
+          <p class="paragraph">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </section>
+
+        <footer>
+          <figure>
+            <figcaption>
+              <img
+                class="avatar"
+                src="images/avatar-michelle.jpg"
+                alt="michelle"
+              />
+              <div class="text">
+                Michelle Appleton
+                <samp>28 Jun 2020</samp>
+              </div>
+            </figcaption>
+
+            <button class="btn-none" onclick="mostrar()">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="16" cy="16" r="16" fill="#ECF2F8" />
+                <path
+                  id="pat-text"
+                  d="M24 15.495L17.7663 9.01392V12.8807H16.4409C12.3314 12.8807 9 16.0393 9 19.9358V21.9849L9.58868 21.3733C11.5901 19.2941 14.4221 18.1094 17.3912 18.1094H17.7663V21.9762L24 15.495Z"
+                  fill="#6E8098"
+                />
+              </svg>
+            </button>
+          </figure>
+
+          <div class="footer">
+            <h3>SHARE</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="images/icon-facebook.svg" alt="icon-facebook" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img src="images/icon-twitter.svg" alt="icon-twitter"
+                /></a>
+              </li>
+
+              <li>
+                <a href=""><img src="images/icon-pinterest.svg" alt="" /></a>
+              </li>
+            </ul>
+            <a href="#">
+              <img class="share" src="images/sharet.svg" alt="share" />
+            </a>
+          </div>
+          <div class="redes">
+            <h3>SHARE</h3>
+            <ol class="lista-desktop">
+              <li>
+                <a href="#"
+                  ><img src="images/icon-facebook.svg" alt="icon-facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon-twitter.svg" alt="icon-twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon-pinterest.svg" alt="icon-pinterest"
+                /></a>
+              </li>
+            </ol>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
