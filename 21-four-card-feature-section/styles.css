@@ -78,7 +78,7 @@ body {
   border-top: 4px solid var(--Orange);
 }
 
-.card__item:nth-child(4) {
+.card-item:nth-child(4) {
   grid-area: card4;
   border-top: 4px solid var(--Blue);
 }
@@ -108,14 +108,18 @@ h3 {
 @media (min-width: 768px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
-
     grid-template-areas:
-      ".     card1  ."
-      "card2 card1 card3"
-      "card2 card4 card3"
-      ".     card4   .";
+      ".     card2  ."
+      "card1 card2 card4"
+      "card1 card3 card4"
+      ".     card3   .";
 
     justify-items: center;
     gap: 2.5em;
+  }
+
+  .card-title {
+    font-size: 24px;
+    letter-spacing: 0.167px;
   }
 }
