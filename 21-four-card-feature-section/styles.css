@@ -1,0 +1,121 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  font-size: 15px;
+}
+
+.card {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-title {
+  color: #4d4f62;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+}
+
+.card-title-bold {
+  font-weight: 600;
+}
+
+.card-paragraph {
+  color: #4d4f62;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.104px;
+}
+
+.card-container {
+  padding-top: 80px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4";
+  justify-items: center;
+  gap: 2.5em;
+}
+
+.card-item {
+  width: 90%;
+  max-width: 350px;
+  padding: 1.5em 1.7em;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-top: 4px solid var(--Cyan);
+  grid-area: card1;
+}
+
+.card-item:nth-child(2) {
+  grid-area: card2;
+  border-top: 4px solid var(--Red);
+}
+
+.card-item:nth-child(3) {
+  grid-area: card3;
+  border-top: 4px solid var(--Orange);
+}
+
+.card__item:nth-child(4) {
+  grid-area: card4;
+  border-top: 4px solid var(--Blue);
+}
+h3 {
+  color: #4d4f62;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-text-container {
+  color: #4d4f62;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.09px;
+}
+
+.card-picture {
+  width: max-content;
+  margin-left: auto;
+}
+
+.card-img {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas:
+      ".     card1  ."
+      "card2 card1 card3"
+      "card2 card4 card3"
+      ".     card4   .";
+
+    justify-items: center;
+    gap: 2.5em;
+  }
+}
