@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 121, 121, 1);
+}
+
+.contenido {
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: rgba(255, 121, 121, 1);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 88px 24px;
+}
+
+.header {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.292px;
+  padding-bottom: 16px;
+}
+
+.header .paragraph {
+  font-weight: 500;
+  line-height: 26px;
+}
+.article {
+  border-radius: 10px;
+  background: #5e54a4;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  padding: 18px 67px;
+}
+
+.p-paragraph {
+  margin: auto;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.268px;
+  text-align: center;
+}
+
+span {
+  font-weight: 500;
+  display: inline-block;
+}
+.error {
+  color: #ff7979;
+  text-align: right;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.form-group {
+  margin-top: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  height: auto;
+  padding: 0.6rem 1rem;
+
+  div {
+    flex: 1;
+    display: block;
+    width: 100%;
+
+    position: relative;
+
+    &:first-of-type {
+      margin-top: 20px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+
+    .error-icon {
+      position: absolute;
+      right: 8%;
+      top: 20%;
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+    }
+
+    span.error {
+      display: none;
+
+      &.visible {
+        display: block;
+        text-align: right;
+        font-style: italic;
+      }
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 1.2rem 1.8rem;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #dedede;
+      background: #fff;
+      font-weight: bolder;
+      color: #3d3b48;
+
+      &:focus {
+        border: 2px solid #ff7979;
+      }
+    }
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-green {
+    background: #38cc8b;
+    color: white;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+  .btn-green:hover {
+    background: #77e2b3;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+  }
+
+  .b-paragraph {
+    color: #bab7d4;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  .b-paragraph span {
+    color: #ff7979;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  .error {
+    padding-top: 0;
+    padding-bottom: 19px;
+    margin-top: -1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenido {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-position: center;
+    background-size: auto;
+    flex-direction: row;
+    width: 92%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 1400px;
+    min-height: 100vh;
+  }
+
+  .header {
+    padding-left: 3rem;
+    flex: 0 0 45%;
+    margin-top: 3em;
+    margin-left: 4em;
+  }
+
+  .header h1 {
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.521px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .header .paragraph {
+    text-align: left;
+  }
+  .main {
+    flex: 0 0 40%;
+    height: 600px;
+    margin-top: 2.3em;
+    margin-right: 6em;
+  }
+
+  .form-group {
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: left;
+  }
+  .error {
+    padding-top: 0;
+    padding-bottom: 19px;
+    margin-top: -1em;
+  }
+}

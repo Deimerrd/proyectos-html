@@ -10,33 +10,110 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Intro component with sign up form</title>
   </head>
   <body>
-    <div>Learn to code by watching others</div>
+    <div class="contenido">
+      <header class="header">
+        <h1>Learn to code by watching others</h1>
+        <p class="paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
 
-    <div>
-      See how experienced developers solve problems in real-time. Watching
-      scripted tutorials is great, but understanding how developers think is
-      invaluable.
+      <main class="main">
+        <article class="article">
+          <p class="p-paragraph">
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
+          </p>
+        </article>
+        <div class="form-group">
+          <form id="form">
+            <div>
+              <input
+                type="text"
+                class="first_name"
+                placeholder="First Name"
+                id="fname"
+              />
+              <span
+                ><img
+                  src="images/icon-error.svg"
+                  class="error-icon"
+                  alt="error"
+              /></span>
+              <span class="error">First Name cannot be empty</span>
+            </div>
+
+            <div>
+              <input
+                type="text"
+                class="last_name"
+                placeholder="Last Name"
+                id="lname"
+              />
+              <span
+                ><img
+                  src="images/icon-error.svg"
+                  class="error-icon"
+                  alt="error"
+              /></span>
+              <span class="error">Last Name cannot be empty</span>
+            </div>
+
+            <div>
+              <input
+                type="email"
+                class="email"
+                placeholder="Email Address"
+                id="email"
+              />
+              <span
+                ><img
+                  src="images/icon-error.svg"
+                  class="error-icon"
+                  alt="error"
+              /></span>
+              <span class="error">Looks like this is not an email</span>
+            </div>
+
+            <div>
+              <input
+                type="password"
+                class="password"
+                placeholder="Password"
+                id="pass"
+              />
+              <span
+                ><img
+                  src="images/icon-error.svg"
+                  class="error-icon"
+                  alt="error"
+              /></span>
+              <span class="error">Password cannot be empty</span>
+            </div>
+
+            <button class="btn btn-green" type="submit">
+              CLAIM YOUR FREE TRIAL
+            </button>
+            <p class="b-paragraph">
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </form>
+        </div>
+      </main>
     </div>
-
-    <div>Try it free 7 days then $20/mo. thereafter</div>
-
-    <div>First Name</div>
-
-    <div>Last Name</div>
-
-    <div>Email Address</div>
-
-    <div>Password</div>
-
-    <div>Claim your free trial</div>
-
-    <div>
-      By clicking the button, you are agreeing to our Terms and Services
-    </div>
+    <script src="js/formulario.js"></script>
   </body>
 </html>
