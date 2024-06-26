@@ -11,7 +11,8 @@ body {
 .contenido {
   background-image: url("./images/bg-intro-mobile.png");
   background-color: rgba(255, 121, 121, 1);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   padding: 88px 24px;
