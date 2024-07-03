@@ -102,13 +102,13 @@ article {
   width: 100%;
 }
 
-ul {
+.ul {
   display: flex;
   justify-content: center;
   padding-bottom: 27px;
   gap: 12.45px;
 }
-ul li {
+.ul li {
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -121,12 +121,12 @@ ul li {
 main {
   padding-bottom: 132px;
 }
-ul li span .face {
+.ul li span .face {
   padding-top: 6px;
   width: 50%;
 }
 
-footer ul i {
+footer .ul i {
   border-radius: 50%;
   color: rgba(76, 123, 243, 1);
   display: inline-block;
@@ -140,7 +140,7 @@ footer ul i {
   cursor: pointer;
 }
 
-footer i:hover {
+footer .ul i:hover {
   background-color: #4c7bf3;
   color: #ffffff;
 }
